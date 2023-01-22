@@ -21,6 +21,21 @@ print(content)
 print(content[5])
 print(content[5][3])
 
+#2. Obliczenie średniej wyplaty
+
+total = 0
+for i in range(1, len(content)):
+    total = total +int(content[i][1])
+averange = total/(len(content)-1)
+print('Srednia wynosi' ,round(averange, 2), 'zlotych')
+
+
+# Obliczanie liczby kobiet na macierzynskim
+total =0
+for i in range (1, len(content)):
+    if content[i][4] == 't\n' and content[i][3] == 'k':
+        total += 1
+print(total)
 
 
 
